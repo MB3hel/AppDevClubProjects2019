@@ -31,8 +31,9 @@ class ViewController: UIViewController {
         let num1 = Double(num1InputField.text ?? "")
         let num2 = Double(num2InputField.text ?? "")
         
-        // These parsed doubles are optional as well. They could be nil. If they are do nothing.
+        // These parsed doubles are optional as well. They could be nil.
         if(num1 == nil || num2 == nil){
+            resultOutputField.text = "NAN"
             return // This exits the function
         }
         
@@ -47,6 +48,7 @@ class ViewController: UIViewController {
         let num2 = Double(num2InputField.text ?? "")
         
         if(num1 == nil || num2 == nil){
+            resultOutputField.text = "NAN"
             return
         }
         
@@ -59,6 +61,7 @@ class ViewController: UIViewController {
         let num2 = Double(num2InputField.text ?? "")
         
         if(num1 == nil || num2 == nil){
+            resultOutputField.text = "NAN"
             return
         }
         
@@ -71,6 +74,7 @@ class ViewController: UIViewController {
         let num2 = Double(num2InputField.text ?? "")
         
         if(num1 == nil || num2 == nil){
+            resultOutputField.text = "NAN"
             return
         }
         
