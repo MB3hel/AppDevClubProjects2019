@@ -4,6 +4,10 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var numberField: UITextField!
     
+    // The first value the user entered. If this is empty string no operation has been chosen yet
+    var firstValue: String? = ""
+    var operation: String = ""
+    
     override func viewDidLoad() {
         super.viewDidLoad()
     }
@@ -15,18 +19,65 @@ class ViewController: UIViewController {
     }
     
     @IBAction func dividePressed(_ sender: Any) {
+        firstValue = numberField.text
+        operation = "/"
+        numberField.text = ""
     }
     
     @IBAction func multiplyPressed(_ sender: Any) {
+        firstValue = numberField.text
+        operation = "*"
+        numberField.text = ""
     }
     
     @IBAction func subtractPressed(_ sender: Any) {
+        if(numberField.text! == ""){
+            // If subtract is presed before a number is entered treat it as a negative sign
+            numberField.text = numberField.text! + "-"
+        }else{
+            // This is a subtract operation
+            firstValue = numberField.text
+            operation = "-"
+            numberField.text = ""
+        }
     }
     
     @IBAction func addPressed(_ sender: Any) {
+        firstValue = numberField.text
+        operation = "+"
+        numberField.text = ""
     }
     
     @IBAction func equalsPressed(_ sender: Any) {
+        if(firstValue == ""){
+            // Exit because no operation was chosen yet
+            return
+        }
+        
+        let firstNum = Double(firstValue ?? "")
+        let secondNum = Double(numberField.text ?? "")
+        
+        // Indicate that no operation has been chosen (for next time)
+        firstValue = ""
+        
+        // Error if either number could not be parsed
+        if(firstNum == nil || secondNum == nil){
+            numberField.text = "ERROR"
+            return
+        }
+        
+        // Have two numbers. Perform an operation
+        if(operation == "+"){
+            numberField.text = String(firstNum! + secondNum!)
+        }else if(operation == "-"){
+            numberField.text = String(firstNum! - secondNum!)
+        }else if(operation == "*"){
+            numberField.text = String(firstNum! * secondNum!)
+        }else if(operation == "/"){
+            numberField.text = String(firstNum! / secondNum!)
+        }else{
+            numberField.text = "UNKNOWN OPERATION"
+        }
     }
     
     @IBAction func decimalPressed(_ sender: Any) {
