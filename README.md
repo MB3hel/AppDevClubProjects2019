@@ -4,9 +4,9 @@ iOS app development club projects for 2019 from meetings I taught / will teach.
 ## Individual Project Descriptions:
 
 ### SimpleCalculator (September 24)
-**Xcode Version**: 10.x+
+**Xcode Version**: 10+
 
-**Supported iOS Versions**: 10.0+
+**Supported iOS Versions**: 10+
 
 ###### Concepts:
 - Storyboard based UI
