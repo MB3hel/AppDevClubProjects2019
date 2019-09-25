@@ -75,8 +75,6 @@ class ViewController: UIViewController {
             numberField.text = String(firstNum! * secondNum!)
         }else if(operation == "/"){
             numberField.text = String(firstNum! / secondNum!)
-        }else{
-            numberField.text = "UNKNOWN OPERATION"
         }
     }
     
@@ -94,6 +92,12 @@ class ViewController: UIViewController {
     // This handles any number button
     @IBAction func numberPressed(_ sender: Any) {
         let button = sender as! UIButton
+        
+        // Make sure text is not nil
+        if(numberField.text == nil){
+            numberField.text = ""
+        }
+        
         numberField.text = numberField.text! + button.titleLabel!.text!
     }
     
