@@ -163,7 +163,7 @@
                                 </connections>
                             </button>
                             <textField opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="MKA-3Q-xn7">
-                                <rect key="frame" x="4" y="60" width="318" height="119"/>
+                                <rect key="frame" x="4" y="60" width="274.33333333333331" height="119"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="119" id="0eR-jR-DBD"/>
                                 </constraints>
@@ -172,11 +172,8 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SJP-Nh-pEF">
-                                <rect key="frame" x="326" y="60" width="45" height="119"/>
+                                <rect key="frame" x="282.33333333333331" y="60" width="88.666666666666686" height="119"/>
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="45" id="kOt-YS-sfT"/>
-                                </constraints>
                                 <state key="normal" title="CLS"/>
                                 <connections>
                                     <action selector="clearPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hf1-si-pux"/>
@@ -202,6 +199,7 @@
                             <constraint firstItem="xw8-Yr-ufj" firstAttribute="top" secondItem="sOV-kl-BTR" secondAttribute="bottom" constant="4" id="A0z-3N-4xF"/>
                             <constraint firstItem="dsw-Ub-Adt" firstAttribute="height" secondItem="Ija-1N-Pqd" secondAttribute="height" id="Bb6-3T-tAP"/>
                             <constraint firstItem="MKA-3Q-xn7" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="16" id="DyH-1d-dJH"/>
+                            <constraint firstItem="Her-H3-fos" firstAttribute="width" secondItem="SJP-Nh-pEF" secondAttribute="width" id="E6e-wD-6iX"/>
                             <constraint firstItem="Qw2-JM-Ku4" firstAttribute="height" secondItem="Ija-1N-Pqd" secondAttribute="height" id="EZt-G1-Ykx"/>
                             <constraint firstItem="XFL-V2-sW1" firstAttribute="top" secondItem="Her-H3-fos" secondAttribute="bottom" constant="4" id="GIH-XO-MWy"/>
                             <constraint firstItem="sOV-kl-BTR" firstAttribute="height" secondItem="Ija-1N-Pqd" secondAttribute="height" id="HNR-o2-3hc"/>

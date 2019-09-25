@@ -1,14 +1,14 @@
 //
-//  SimpleCalculatorUITests.swift
-//  SimpleCalculatorUITests
+//  SimpleCalculator2UITests.swift
+//  SimpleCalculator2UITests
 //
-//  Created by Marcus Behel on 9/11/19.
+//  Created by Marcus Behel on 9/24/19.
 //  Copyright © 2019 Marcus Behel. All rights reserved.
 //
 
 import XCTest
 
-class SimpleCalculatorUITests: XCTestCase {
+class SimpleCalculator2UITests: XCTestCase {
 
     override func setUp() {
         // Put setup code here. This method is called before the invocation of each test method in the class.

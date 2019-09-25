@@ -1,8 +1,8 @@
 //
 //  AppDelegate.swift
-//  SimpleCalculator
+//  SimpleCalculator2
 //
-//  Created by Marcus Behel on 9/11/19.
+//  Created by Marcus Behel on 9/24/19.
 //  Copyright © 2019 Marcus Behel. All rights reserved.
 //
 
