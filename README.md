@@ -8,16 +8,19 @@ iOS app development club projects for 2019 from meetings I taught / will teach.
 
 **Supported iOS Versions**: 10+
 
-### SimpleCalculator (September 24)
-**Xcode Version**: 10+
-
-**Supported iOS Versions**: 10+
-
 ###### Concepts:
 - More complex contraint layout
 - Data type conversions (taking into account nil values)
 - App provisioning for iOS devices (not emulators)
 - XCode 11 changes
+
+###### Screenshots:
+<img src="Calculator/screenshot.png" width="175">
+
+### SimpleCalculator (September 24)
+**Xcode Version**: 10+
+
+**Supported iOS Versions**: 10+
 
 ###### Concepts:
 - Storyboard based UI
