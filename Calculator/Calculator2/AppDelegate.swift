@@ -1,6 +1,6 @@
 //
 //  AppDelegate.swift
-//  Calculator
+//  Calculator2
 //
 //  Created by Marcus Behel on 9/14/19.
 //  Copyright © 2019 Marcus Behel. All rights reserved.
